@@ -27,36 +27,68 @@
         </form>
     </div> <br>
 
-    
+    <!--
     <div class="score">
         <h3 id="scoreTitle">Score</h3>
         <div id="player1Score">Player 1</div>
         <div>0 </div>
         <div id="player2Score">Player2</div>
         <div>0</div> <br>
-    </div> 
+    </div>  -->
 
     <div class="container">
         <h3 id="boardTitle">Board</h3>
         <div class="board"> 
-            <button class="cell" onclick="cellClick(this.id)" id="1">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="2">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="3">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="4">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="5">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="6">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="7">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="8">Choose!</button>
-            <button class="cell" onclick="cellClick(this.id)" id="9">Choose!</button>
+            <button class="cell" id="1">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="2">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="3">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="4">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="5">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="6">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="7">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="8">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+            <button class="cell" id="9">
+                <span class="cell-value">Choose Me!</span>
+            </button>
+
         </div> <br><br>
-    </div> 
- <br><br>
-    <div class="reset">
-        <button id="resetButton" onclick="resetBoard()"> Reset Board </button>
+    </div><br><br>
+
+    <div id= "winner-overlay">
+        <div id="gameResultBox">
+            <div id="resultBox">
+                <div id="winnerBox">
+                    <span>Player 1 Wins!</span>
+                </div>
+            </div>
+               <div class="reset"></div>
+                    <button id="resetButton" onclick="resetBoard()"> Reset Board </button>
+                </div>
+        </div>
+
     </div>
 
+ 
 
 
+
+    <!--onclick="cellClick(this.id)"--> 
 
 
 

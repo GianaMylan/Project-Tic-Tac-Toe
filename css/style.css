@@ -33,12 +33,7 @@ body {
     height: 400px;
     width: 400px;
 }
-.cell > .purple {
-    background-color: darkmagenta;
-}
-.cell > .green {
-    background-color: rgb(0, 177, 0);
-}
+
 
 .cell{
     background: cornsilk;
@@ -56,7 +51,53 @@ body {
     cursor: pointer;
     color: indigo;
 }
-
+.cell-value {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    transition: 350ms;
+}
+.cell-value.animation {
+    width: 5vmin;
+    height: 5vmin;
+    animation-duration: 350ms;
+}
 .reset {
     margin: auto;
+    padding: 15px;
+}
+#winner-overlay {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, .40) ;
+}
+#gameResultBox {
+    display: grid;
+
+}
+#resultBox {
+    display: grid;
+}
+#winnerBox {
+    margin-bottom: 5px;
+    font-size: 24pt;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(94, 168, 197);
+}
+#reset {
+    padding-top: 2vmin;
+}
+#resetButton {
+    font-size: 24pt;
+    font-weight: bold;
+    background: lightskyblue;
+    border: lightslategray;
+    border-radius: .25rem;
+    padding: 10px;
 }

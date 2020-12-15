@@ -4,13 +4,10 @@
 
 
 
-let boardArr = ["","","","","","","","",""];
-let player1 = 'X';
-let player2 = 'O';
-let computer = 'C';
-var turn = true;
+let boardArray = ["","","","","","","","",""];
+var player1Turn = true;
 
-
+/*
 function startGame() {
     let p1Name = document.getElementById("inputPlayer1").value;
     document.getElementById("player1Score").innerHTML = p1Name;
@@ -23,9 +20,34 @@ function startGame() {
     if(player2 === "O") {
         $(this).html("O")
     }
+};*/
+
+const classNames = {
+    cell: 'cell',
+    cellValue: 'cell-value',
+    character: 'character'
 };
 
+const users = {
+    playerOne: 'X',
+    playerTwo: 'O'
+}
 
+const cell = document.querySelectorAll(`.${classNames.cell}`);
+cell.forEach((e, i) => {
+    e.addEventListener('click', () => {
+        if (!boardArray[i]) {
+        boardArray[i] = player1Turn ? users.playerOne : users.playerTwo;
+        player1Turn = !player1Turn;
+
+        const cellValue = e.querySelector(`.${classNames.cellValue}`);
+        cellValue.innerHTML = boardArray[i];
+        cellValue.classLists.add(classNames.animation);
+        }
+    });
+});
+
+/*
 function cellClick(hi) {
    document.getElementById(hi)
    //console.log(document.getElementById(hi).innerHTML)
@@ -35,9 +57,9 @@ function cellClick(hi) {
     document.getElementById(hi).innerHTML = "O"
    } turn =! turn
    console.log(hi) 
-}; 
+}; */
 
-function checkGame () {
+function trackGame () {
 }
 
 function countPlayer1 () { 
@@ -51,9 +73,10 @@ function countPlayer2 () {
 };
 
 function gameTrack () {
-    
+
 } // check 
 
+/*
 function whoWonGame () {
     const winArr = [
     ["#1, #2, #3"], ["#4, #5, #6"], ["#7, #8, #9"], ["#1, #4, #7"], ["#2, #5, #8"], ["#3, #6, #9"], ["#1, #5, #9"], ["#3, #5, #7"]];
@@ -82,12 +105,12 @@ function whoWonGame () {
         console.log ('the show must go on...')
     }
 };
-
+*/
 
 
 function resetBoard () {
     console.log(document.querySelectorAll('.cell'))
-    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "Choose!");
+    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "Choose Me!");
 }
 
 
