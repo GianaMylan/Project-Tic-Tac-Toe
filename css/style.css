@@ -10,9 +10,10 @@ body {
 .form {
     border: solid black 1px;
     border-radius: .20rem;
+    display: grid;
+    justify-content: center;
     padding: 15px;
-    min-width: 500px;
-    max-width: 700px;
+    width: 250px;
     margin: auto;
 }
 .score {
@@ -22,7 +23,6 @@ body {
     display: grid;
     margin: auto;
 }
-
 .board {
     text-align: center;
     display: grid;
@@ -67,7 +67,7 @@ body {
     padding: 15px;
 }
 #winner-overlay {
-    display: grid;
+    display: none;
     place-items: center;
     position: absolute;
     left: 0;
@@ -78,7 +78,13 @@ body {
 }
 #gameResultBox {
     display: grid;
-
+    background: rgb(32, 29, 85);
+    border:solid 2px;
+    border-radius: .25rem;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #resultBox {
     display: grid;
@@ -87,6 +93,7 @@ body {
     margin-bottom: 5px;
     font-size: 24pt;
     font-weight: bold;
+    padding: 10pt;
     color: rgb(0, 0, 0);
     background: rgb(94, 168, 197);
 }
@@ -100,4 +107,9 @@ body {
     border: lightslategray;
     border-radius: .25rem;
     padding: 10px;
+}
+#resetButton:hover, #resetButton:active {
+    color: white;
+    background: rgb(28, 28, 66);
+    cursor: pointer;
 }
