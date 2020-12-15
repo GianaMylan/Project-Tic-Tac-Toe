@@ -38,10 +38,9 @@ function cellClick(hi) {
 }; 
 
 function checkGame () {
-
 }
 
-function countPlayer1 () { // need to get count of P1 
+function countPlayer1 () { 
     let p1Count = $('.board, "X"').length  
     return p1Count
 };
@@ -52,23 +51,28 @@ function countPlayer2 () {
 };
 
 function gameTrack () {
-
+    
 } // check 
 
 function whoWonGame () {
     const winArr = [
-    [1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
-    let player1Wins = getWinArr(winArr, "X")
-    let player2Wins = getWinArr(winArr, "O")
+    ["#1, #2, #3"], ["#4, #5, #6"], ["#7, #8, #9"], ["#1, #4, #7"], ["#2, #5, #8"], ["#3, #6, #9"], ["#1, #5, #9"], ["#3, #5, #7"]];
+
+    let player1WinArr = getWinArr(winArr, "X");
+    let player2WinArr = getWinArr(winArr, "O");
+    let p1Wins = player1WinArr.includes(true);
+    let p2Wins = player2WinArr.includes(true);
     let fullBoard = countPlayer1() + countPlayer2()
     let drawGame = (fullBoard === 9) && (!player1Wins) && (!player2Wins) 
 
-    if(player1Wins) {
-        player1Wins()
-        return winner = `${Player1Input} wins!}`
+
+
+    if(p1Wins) {
+        player1WinArr()
+        return winner = `${Player1Input} wins!}`;
     }
-    if(player2Wins) {
-        player2Wins()
+    if(p2Wins) {
+        player2WinArr()
         return winner = `${Player2Input} wins!}`
     }
     if(drawGame) {
@@ -81,10 +85,9 @@ function whoWonGame () {
 
 
 
-function restartGame () {
+function resetBoard () {
     console.log(document.querySelectorAll('.cell'))
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "Choose!");
-
 }
 
 
