@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe - Giana Mylan</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1 id="mainTitle"> Tic Tac Toe </h1>
@@ -21,7 +22,7 @@
             <input type="text" placeholder="Name" id="inputPlayer2" class="inputPlayer2"> 
 
             <label for="submit"> Ready, Set </label>
-            <button id="goButton"> Go! </button>
+            <button type="button" class="goButton" onclick="startGame()"> Go! </button>
             <br><br>
         </form>
     </div> <br>
@@ -29,27 +30,29 @@
     
     <div class="score">
         <h3 id="scoreTitle">Score</h3>
-        <div id="player1score">Player 1 : 0</div>
-        <div id="player2Score">Player2 : 0</div> <br>
+        <div id="player1Score">Player 1</div>
+        <div>0 </div>
+        <div id="player2Score">Player2</div>
+        <div>0</div> <br>
     </div> 
 
     <div class="container">
         <h3 id="boardTitle">Board</h3>
         <div class="board"> 
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
-            <div class="cell">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="1">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="2">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="3">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="4">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="5">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="6">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="7">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="8">Choose!</div>
+            <div class="cell" onclick="cellClick(this.id)" id="9">Choose!</div>
         </div>
     </div> 
  <br><br><br><br><br><br><br><br><br>
     <div class="reset">
-        <button id="resetButton"> Reset </button>
+        <button id="resetButton" onclick="restartGame()"> Reset </button>
     </div>
 
 
