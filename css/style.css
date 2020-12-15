@@ -1,0 +1,56 @@
+body {
+    background: radial-gradient(#afc3c7, #ffffff);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+}
+#mainTitle, #formTitle, #scoreTitle, #boardTitle{
+    text-align: center;
+}
+
+.form {
+    border: solid black 1px;
+    border-radius: .20rem;
+    min-width: 500px;
+    max-width: 700px;
+    justify-content: center;
+    justify-self: center;
+}
+.score {
+    text-align: center;
+    border: black solid 1px;
+    display: grid;
+}
+
+.board {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    justify-self: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+.cell > .purple {
+    background-color: darkmagenta;
+}
+.cell > .green {
+    background-color: rgb(0, 177, 0);
+}
+.cell {
+    background: cornsilk;
+    border: black solid 2px;
+    border-radius: .20rem;
+    height: 60px;
+    width: 100px;
+    justify-content: center;
+    padding-top: 40px;
+}
+.cell:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+#resetButton {
+    border: green solid 1px;
+
+}
