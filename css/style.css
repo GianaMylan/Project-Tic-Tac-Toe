@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(#afc3c7, #ffffff);
+    background: radial-gradient(#c7c7c7, #ffffff);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: grid;
 }
@@ -36,7 +36,7 @@ body {
 
 
 .cell{
-    background: cornsilk;
+    background: #ffe3f9;
     border: black solid 2px;
     font-size: 3vmin;
     border-radius: .50rem;
@@ -47,7 +47,7 @@ body {
 }
 
 .cell:hover {
-    background-color: rgb(255, 255, 255, .50) ;
+    background-color: rgba(253, 209, 255, 0.9) ;
     cursor: pointer;
     color: indigo;
 }
@@ -74,7 +74,7 @@ body {
 }
 #gameResultBox {
     display: grid;
-    background: rgb(32, 29, 85);
+    background: rgb(85, 29, 80);
     border:solid 2px;
     border-radius: .25rem;
     padding-left: 90px;
@@ -91,7 +91,7 @@ body {
     font-weight: bold;
     padding: 10pt;
     color: rgb(0, 0, 0);
-    background: rgb(94, 168, 197);
+    background: rgb(187, 127, 187);
 }
 #reset {
     padding-top: 2vmin;
@@ -99,13 +99,14 @@ body {
 #resetButton {
     font-size: 24pt;
     font-weight: bold;
-    background: lightskyblue;
+    background:  rgb(187, 127, 187);
     border: lightslategray;
     border-radius: .25rem;
     padding: 10px;
 }
+
 #resetButton:hover, #resetButton:active {
-    color: white;
-    background: rgb(28, 28, 66);
+    color: rgb(90, 0, 86);
+    background: rgb(255, 255, 255);
     cursor: pointer;
 }

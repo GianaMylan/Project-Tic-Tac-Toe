@@ -64,12 +64,11 @@ const showWinner = () => {
     } 
     winnerOverlay.style.display = 'grid';
 };
-
 /*
 const resetBoard = () => {
     boardArray = ["","","","","","","","",""];
     player1Turn = true;
-    winner = undefined;
+    winner= undefined;
     turnsRemain = 9;
 
     cell.forEach ((e, i) => {
@@ -84,8 +83,8 @@ const resetBoard = () => {
 
 resetButton.addEventListener('click', () => {
     resetBoard();
-});
-*/
+});*/
+
 cell.forEach((e, i) => {
     e.addEventListener('click', () => {
         if (!boardArray[i]) {
@@ -104,7 +103,6 @@ cell.forEach((e, i) => {
         }
     });
 });
-
 
 
 
