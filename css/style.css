@@ -44,8 +44,8 @@ body {
     height: 150px;
     width: 150px;
     justify-content: center;
-
 }
+
 .cell:hover {
     background-color: rgb(255, 255, 255, .50) ;
     cursor: pointer;
@@ -57,11 +57,7 @@ body {
     height: 0;
     transition: 350ms;
 }
-.cell-value.animation {
-    width: 5vmin;
-    height: 5vmin;
-    animation-duration: 350ms;
-}
+
 .reset {
     margin: auto;
     padding: 15px;

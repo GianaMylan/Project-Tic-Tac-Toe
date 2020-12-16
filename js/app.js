@@ -1,12 +1,12 @@
 const classNames = {
     cell: 'cell',
     cellValue: 'cell-value',
-    character: 'character'
+   // animation: 'animation'
 };
 
 const users = {
-    playerOne: 'X',
-    playerTwo: 'O',
+    playerOne: '(◕‿◕✿)',
+    playerTwo: '(≧０≦)',
 }
 
 const winType = {
@@ -65,7 +65,8 @@ const showWinner = () => {
     winnerOverlay.style.display = 'grid';
 };
 
-function resetBoard () {
+/*
+const resetBoard = () => {
     boardArray = ["","","","","","","","",""];
     player1Turn = true;
     winner = undefined;
@@ -74,17 +75,17 @@ function resetBoard () {
     cell.forEach ((e, i) => {
         const cellValue = e.querySelector(`.${classNames.cellValue}`);
         cellValue.innerHTML = boardArray[i];
-        cellValue.classLists.remove(classList.animation);
-        e.classList.remove(classNames.winner);
+        cellValue.classNames.remove(classNames.animation);
+        e.classNames.remove(classNames.winner);
     });
 
     winnerOverlay.style.display = 'none';
-}
+};
 
 resetButton.addEventListener('click', () => {
     resetBoard();
 });
-
+*/
 cell.forEach((e, i) => {
     e.addEventListener('click', () => {
         if (!boardArray[i]) {
@@ -98,7 +99,7 @@ cell.forEach((e, i) => {
 
         const cellValue = e.querySelector(`.${classNames.cellValue}`);
         cellValue.innerHTML = boardArray[i];
-        cellValue.classLists.add(classNames.cell-value.animation); //ask about this add 
+        //cellValue.classNames.add(classNames.animation); //ask about this add 
         //why is the add undefined
         }
     });
