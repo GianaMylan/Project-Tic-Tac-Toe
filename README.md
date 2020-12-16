@@ -30,3 +30,7 @@ Made By: Giana Mylan
 3. Player 2 then chooses a box. 
 4. This will repeat until either Player 1 or Player 2 fill 3 in a row.
 5. An overlay will pop up stating which player has won the game.
+
+
+
+(When you're done) You have to deploy your website to the cloud and put the link in your README file
