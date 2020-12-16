@@ -8,6 +8,7 @@ body {
 }
 
 .form {
+    background: rgb(173, 252, 252, .7);
     border: solid black 1px;
     border-radius: .20rem;
     display: grid;
