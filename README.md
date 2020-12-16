@@ -12,6 +12,7 @@ HTML will the basis for the button structure.
 CSS will be used to style the site and Javascript will be used to create the functions of the game.
 
 ## The Wireframe :
+![Wireframe] (https://github.com/GianaMylan/Project-Tic-Tac-Toe/blob/master/wireframe.jpg)
 
 ## Schedule: [heavily modified]
 - [x] create the HTML and CSS base (function over asthetic)
