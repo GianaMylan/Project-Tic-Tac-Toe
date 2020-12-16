@@ -33,4 +33,8 @@ Made By: Giana Mylan
 
 
 
+<<<<<<< HEAD
 (When you're done) You have to deploy your website to the cloud and put the link in your README file# Project-Tic-Tac-Toe
+=======
+(When you're done) You have to deploy your website to the cloud and put the link in your README file
+>>>>>>> b05b3a45559c06594457d438f9b5d57248e0c091
